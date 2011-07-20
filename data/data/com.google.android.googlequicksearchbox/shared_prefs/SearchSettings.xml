@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<int name="voice_search_version" value="214" />
+<long name="first_voice_search_hint_time" value="1311131798863" />
+</map>

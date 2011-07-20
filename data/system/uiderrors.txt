@@ -1,0 +1,4 @@
+2011-07-19 20:13: New package com.android.deskclock renamed to replace old package com.android.alarmclock
+2011-07-19 20:14: System package com.android.protips signature changed; retaining data.
+2011-07-19 20:15: System package com.android.soundrecorder no longer exists; wiping its data
+2011-07-19 20:15: System package com.android.gallery no longer exists; wiping its data

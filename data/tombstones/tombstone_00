@@ -1,0 +1,783 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'samsung/GT-I5700/GT-I5700/GT-I5700:2.2.2/FRG83G/60505:user/release-keys'
+pid: 1819, tid: 1861  >>> /system/bin/mediaserver <<<
+signal 11 (SIGSEGV), fault addr 00000000
+ r0 00000000  r1 40406c9c  r2 afd428f8  r3 00000000
+ r4 40406c9c  r5 00018ac0  r6 00000000  r7 a250c040
+ r8 00100000  r9 a261b7ad  10 40307000  fp 0000f468
+ ip 00000003  sp 40406c78  lr a2508be1  pc a2508be2  cpsr 00000030
+ d0  bfa2b54d5e017a46  d1  3e66376972bea4d0
+ d2  3fe81c5753a017a4  d3  3ff0000000000000
+ d4  bfd2f8823751ddbc  d5  40025f1046ea3bb8
+ d6  3fb483acf684daa4  d7  3fc81c5753a017a4
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ scr 20000010
+
+         #00  pc 00008be2  /system/lib/libcameraservice.so (_ZN7android13CameraService6ClientC1ERKNS_2spIS0_EERKNS2_INS_13ICameraClientEEEi)
+         #01  pc 00008f2a  /system/lib/libcameraservice.so (_ZN7android13CameraService7connectERKNS_2spINS_13ICameraClientEEE)
+         #02  pc 0000efba  /system/lib/libcamera_client.so (_ZN7android15BnCameraService10onTransactEjRKNS_6ParcelEPS1_j)
+         #03  pc 000073ac  /system/lib/libcameraservice.so (_ZN7android13CameraService10onTransactEjRKNS_6ParcelEPS1_j)
+         #04  pc 000132dc  /system/lib/libbinder.so (_ZN7android7BBinder8transactEjRKNS_6ParcelEPS1_j)
+         #05  pc 00016528  /system/lib/libbinder.so (_ZN7android14IPCThreadState14executeCommandEi)
+         #06  pc 000166fc  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb)
+         #07  pc 0001b44c  /system/lib/libbinder.so
+         #08  pc 0001b3bc  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv)
+         #09  pc 0001b812  /system/lib/libutils.so
+         #10  pc 000115a8  /system/lib/libc.so (__thread_entry)
+         #11  pc 00011088  /system/lib/libc.so (pthread_create)
+
+code around pc:
+a2508bc0 fdbaf7fe ac099805 1c2063e8 ef7af7fd 
+a2508bd0 1c211c28 f7fe3038 1c20fde7 fd90f7fe 
+a2508be0 68036ba8 47a06a5c 4a211c29 31404b21 
+a2508bf0 58b97008 4b2058fa 58fb6ba8 93046804 
+a2508c00 930069eb 9b046924 6ba847a0 6801ac08 
+
+code around lr:
+a2508bc0 fdbaf7fe ac099805 1c2063e8 ef7af7fd 
+a2508bd0 1c211c28 f7fe3038 1c20fde7 fd90f7fe 
+a2508be0 68036ba8 47a06a5c 4a211c29 31404b21 
+a2508bf0 58b97008 4b2058fa 58fb6ba8 93046804 
+a2508c00 930069eb 9b046924 6ba847a0 6801ac08 
+
+stack:
+    40406c38  40406c9c  
+    40406c3c  a79161f0  /system/lib/libcamera.so
+    40406c40  ffffcdc0  
+    40406c44  a7910891  /system/lib/libcamera.so
+    40406c48  0001954c  [heap]
+    40406c4c  a2613be5  /system/lib/libutils.so
+    40406c50  00000000  
+    40406c54  a2613c3f  /system/lib/libutils.so
+    40406c58  00018af4  [heap]
+    40406c5c  40406c9c  
+    40406c60  00018ac0  [heap]
+    40406c64  00000000  
+    40406c68  40406c9c  
+    40406c6c  00018ac0  [heap]
+    40406c70  df002777  
+    40406c74  e3a070ad  
+#00 40406c78  00000003  
+    40406c7c  afd42740  /system/lib/libc.so
+    40406c80  00018aa8  [heap]
+    40406c84  40406cd8  
+    40406c88  40406d1c  
+    40406c8c  00000901  
+    40406c90  0000b3f4  [heap]
+    40406c94  40406cd8  
+    40406c98  0000b3e0  [heap]
+    40406c9c  00000000  
+    40406ca0  00000000  
+    40406ca4  40406cd8  
+    40406ca8  0000b3e0  [heap]
+    40406cac  40406cec  
+    40406cb0  00018ac0  [heap]
+    40406cb4  a2508f2f  /system/lib/libcameraservice.so
+#01 40406cb8  40406d14  
+    40406cbc  a2712d75  /system/lib/libbinder.so
+    40406cc0  0000b3f4  [heap]
+    40406cc4  40406d1c  
+    40406cc8  0001954c  [heap]
+    40406ccc  a2613c59  /system/lib/libutils.so
+    40406cd0  00018a90  [heap]
+    40406cd4  00000901  
+    40406cd8  0000b3e0  [heap]
+    40406cdc  00018a90  [heap]
+    40406ce0  00000002  
+    40406ce4  a2613d85  /system/lib/libutils.so
+    40406ce8  00018a50  [heap]
+    40406cec  00000000  
+    40406cf0  40406d18  
+    40406cf4  40406d10  
+    40406cf8  40406d14  
+    40406cfc  40406d1c  
+    40406d00  40406dc0  
+    40406d04  aba8efbd  /system/lib/libcamera_client.so
+#02 40406d08  00000000  
+    40406d0c  40406d5c  
+    40406d10  0000f908  [heap]
+    40406d14  afd0cfc1  /system/lib/libc.so
+    40406d18  00018a50  [heap]
+    40406d1c  00019538  [heap]
+    40406d20  40406d5c  
+    40406d24  00000001  
+    40406d28  00000000  
+    40406d2c  40406d5c  
+    40406d30  0000f908  [heap]
+    40406d34  a25073af  /system/lib/libcameraservice.so
+#03 40406d38  00000000  
+    40406d3c  a2719635  /system/lib/libbinder.so
+    40406d40  40406df0  
+    40406d44  00000901  
+    40406d48  00000001  
+    40406d4c  0000b3e0  [heap]
+    40406d50  40406df0  
+    40406d54  40406dc0  
+    40406d58  0000f968  [heap]
+    40406d5c  00018a60  [heap]
+    40406d60  00000000  
+    40406d64  a2507324  /system/lib/libcameraservice.so
+    40406d68  0000b3e4  [heap]
+    40406d6c  40406dc0  
+    40406d70  00000001  
+    40406d74  a27132df  /system/lib/libbinder.so
+#04 40406d78  00000000  
+    40406d7c  00000054  
+    40406d80  0000b400  [heap]
+    40406d84  40406df0  
+    40406d88  0000b400  [heap]
+    40406d8c  a27132a1  /system/lib/libbinder.so
+    40406d90  0000f908  [heap]
+    40406d94  00000000  
+    40406d98  a2724060  /system/lib/libbinder.so
+    40406d9c  a271652b  /system/lib/libbinder.so
+#05 40406da0  00000000  
+    40406da4  a2716151  /system/lib/libbinder.so
+    40406da8  0000f908  [heap]
+    40406dac  00000000  
+    40406db0  00000000  
+    40406db4  40406dc0  
+    40406db8  000003f5  
+    40406dbc  0000071b  
+    40406dc0  00000000  
+    40406dc4  00000000  
+    40406dc8  00000000  
+    40406dcc  00000000  
+    40406dd0  00000000  
+    40406dd4  00000000  
+    40406dd8  00000000  
+    40406ddc  00000000  
+    40406de0  00000000  
+    40406de4  afd00001  /system/lib/libc.so
+    40406de8  00000000  
+    40406dec  00000000  
+    40406df0  00000000  
+    40406df4  40009028  /dev/binder
+    40406df8  00000054  
+    40406dfc  00000054  
+    40406e00  00000054  
+    40406e04  4000907c  /dev/binder
+    40406e08  00000001  
+    40406e0c  00000001  
+    40406e10  00000001  
+    40406e14  00000001  
+    40406e18  a2716151  /system/lib/libbinder.so
+    40406e1c  0000f908  [heap]
+    40406e20  0000b3e4  [heap]
+    40406e24  a271a473  /system/lib/libbinder.so
+    40406e28  fffffffe  
+    40406e2c  0000b410  [heap]
+    40406e30  0000b3e4  [heap]
+    40406e34  00000001  
+    40406e38  00000010  
+    40406e3c  00000901  
+    40406e40  00002714  
+    40406e44  00000054  
+    40406e48  00000004  
+    40406e4c  40009028  /dev/binder
+    40406e50  4000907c  /dev/binder
+    40406e54  c8dff316  
+    40406e58  0000f908  [heap]
+    40406e5c  0000f908  [heap]
+    40406e60  00000000  
+    40406e64  0000f938  [heap]
+    40406e68  0000006e  
+    40406e6c  a2716701  /system/lib/libbinder.so
+#06 40406e70  0000f968  [heap]
+    40406e74  00000001  
+    40406e78  0000f910  [heap]
+    40406e7c  0000f924  [heap]
+    40406e80  a271b441  /system/lib/libbinder.so
+    40406e84  0000af4d  [heap]
+    40406e88  40406eb4  
+    40406e8c  40406eb0  
+    40406e90  a2723998  /system/lib/libbinder.so
+    40406e94  a271b451  /system/lib/libbinder.so
+#07 40406e98  0000af48  [heap]
+    40406e9c  a261b3bf  /system/lib/libutils.so
+#08 40406ea0  00000002  
+    40406ea4  40406ea8  
+    40406ea8  0000af48  [heap]
+    40406eac  0000f450  [heap]
+    40406eb0  00000000  
+    40406eb4  0000af48  [heap]
+    40406eb8  00000000  
+    40406ebc  0000f480  [heap]
+    40406ec0  00000000  
+    40406ec4  0000af48  [heap]
+    40406ec8  a261b339  /system/lib/libutils.so
+    40406ecc  a261b815  /system/lib/libutils.so
+#09 40406ed0  00000000  
+    40406ed4  a261b7ad  /system/lib/libutils.so
+    40406ed8  0000f468  [heap]
+    40406edc  40406f00  
+    40406ee0  a261b7ad  /system/lib/libutils.so
+    40406ee4  0000f468  [heap]
+    40406ee8  00000078  
+    40406eec  afd115ac  /system/lib/libc.so
+#10 40406ef0  afd41328  /system/lib/libc.so
+    40406ef4  40406f00  
+    40406ef8  0000f8c8  [heap]
+    40406efc  afd1108c  /system/lib/libc.so
+#11 40406f00  40406f00  
+    40406f04  0000f8c8  [heap]
+    40406f08  00000002  
+    40406f0c  00000000  
+    40406f10  00000000  
+    40406f14  0000f908  [heap]
+    40406f18  00000000  
+    40406f1c  00000000  
+    40406f20  00000000  
+    40406f24  00000000  
+    40406f28  00000000  
+    40406f2c  00000000  
+    40406f30  00000000  
+    40406f34  00000000  
+    40406f38  00000000  
+    40406f3c  00000000  
+    40406f40  00000000  
+    40406f44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1819, tid: 1819
+ r0 fffffe00  r1 c0186201  r2 bec0ece8  r3 bec0ecdc
+ r4 0000ac60  r5 bec0ece8  r6 0000ac90  r7 00000036
+ r8 00000000  r9 00000000  10 00000000  fp 00000000
+ ip a2724100  sp bec0ecc0  lr afd21f85  pc afd0dd8c  cpsr 80000010
+ d0  bfa2b54d5e017a46  d1  3e66376972bea4d0
+ d2  3fe81c5753a017a4  d3  3ff0000000000000
+ d4  bfd2f8823751ddbc  d5  40025f1046ea3bb8
+ d6  3fb483acf684daa4  d7  3fc81c5753a017a4
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ scr 20000010
+
+         #00  pc 0000dd8c  /system/lib/libc.so
+         #01  pc 00021f82  /system/lib/libc.so (ioctl)
+         #02  pc 00015d48  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb)
+         #03  pc 000166e0  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb)
+         #04  pc 000087f4  /system/bin/mediaserver (main)
+         #05  pc 0000d5a6  /system/lib/libc.so (__libc_init)
+
+code around pc:
+afd0dd6c e8bd0090 e1b00000 512fff1e ea00a26e 
+afd0dd7c e320f000 e92d0090 e3a07036 ef000000 
+afd0dd8c e8bd0090 e1b00000 512fff1e ea00a266 
+afd0dd9c e320f000 e92d0090 e3a07091 ef000000 
+afd0ddac e8bd0090 e1b00000 512fff1e ea00a25e 
+
+code around lr:
+afd21f64 0001f436 00000048 00008910 b500b40e 
+afd21f74 ab03b082 9a04cb02 93013304 eefef7eb 
+afd21f84 bc08b002 4718b003 00000000 1c0eb570 
+afd21f94 00721c14 1c050d52 2a001c33 0072d112 
+afd21fa4 2d00d101 1c28d051 4b2b1c31 f0114a29 
+
+stack:
+    bec0ec80  00000000  
+    bec0ec84  00000000  
+    bec0ec88  00000000  
+    bec0ec8c  00000001  
+    bec0ec90  00000000  
+    bec0ec94  0000f8c8  [heap]
+    bec0ec98  00000000  
+    bec0ec9c  40009028  /dev/binder
+    bec0eca0  00000050  
+    bec0eca4  00000050  
+    bec0eca8  00000050  
+    bec0ecac  40009078  /dev/binder
+    bec0ecb0  00000000  
+    bec0ecb4  00000000  
+    bec0ecb8  00000000  
+    bec0ecbc  00000001  
+#00 bec0ecc0  0000ac60  [heap]
+    bec0ecc4  0000acc0  [heap]
+#01 bec0ecc8  0000b42c  [heap]
+    bec0eccc  bec0ecdc  [stack]
+    bec0ecd0  a2715d4b  /system/lib/libbinder.so
+    bec0ecd4  c0186201  
+    bec0ecd8  bec0ece8  [stack]
+    bec0ecdc  00000001  
+#02 bec0ece0  00000001  
+    bec0ece4  00000001  
+    bec0ece8  00000008  
+    bec0ecec  00000008  
+    bec0ecf0  0000ae08  [heap]
+    bec0ecf4  00000100  
+    bec0ecf8  00000000  
+    bec0ecfc  0000ad00  [heap]
+    bec0ed00  0000ac60  [heap]
+    bec0ed04  0000ac60  [heap]
+    bec0ed08  00000000  
+    bec0ed0c  0000ac90  [heap]
+    bec0ed10  00000000  
+    bec0ed14  a27166e5  /system/lib/libbinder.so
+#03 bec0ed18  0000acc0  [heap]
+    bec0ed1c  00000001  
+    bec0ed20  0000ac68  [heap]
+    bec0ed24  0000ac7c  [heap]
+    bec0ed28  0000ab58  [heap]
+    bec0ed2c  bec0ed44  [stack]
+    bec0ed30  00000000  
+    bec0ed34  00000000  
+    bec0ed38  00000000  
+    bec0ed3c  000087f7  /system/bin/mediaserver
+#04 bec0ed40  00000000  
+    bec0ed44  0000ab58  [heap]
+    bec0ed48  0000af10  [heap]
+    bec0ed4c  0000ab58  [heap]
+    bec0ed50  00000000  
+    bec0ed54  afd0d5a9  /system/lib/libc.so
+#05 bec0ed58  00000000  
+    bec0ed5c  b0002937  /system/bin/linker
+    bec0ed60  00000001  
+    bec0ed64  bec0ee42  [stack]
+    bec0ed68  00000000  
+    bec0ed6c  bec0ee5a  [stack]
+    bec0ed70  bec0ee8b  [stack]
+    bec0ed74  bec0eea7  [stack]
+    bec0ed78  bec0eeba  [stack]
+    bec0ed7c  bec0eecf  [stack]
+    bec0ed80  bec0eeea  [stack]
+    bec0ed84  bec0eefd  [stack]
+    bec0ed88  bec0ef1a  [stack]
+    bec0ed8c  bec0efc1  [stack]
+    bec0ed90  00000000  
+    bec0ed94  00000010  
+    bec0ed98  000001d7  
+    bec0ed9c  00000006  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1819, tid: 1858
+cannot get registers: No such process
+         #00  pc 0000ee28  /system/lib/libc.so
+         #01  lr afd10d08  /system/lib/libc.so
+
+code around pc:
+afd0ee08 0afffff7 e8bd4010 e12fff1e e1010090 
+afd0ee18 e12fff1e e92d0090 e3a070f0 ef000000 
+afd0ee28 e8bd0090 e12fff1e e92d0090 e1a03002 
+afd0ee38 e1a02001 e3a01000 e3a070f0 ef000000 
+afd0ee48 e8bd0090 e12fff1e e92d0090 e1a02001 
+
+code around lr:
+afd10ce8 e1a00001 e1a04001 ebffff0c e1a01008 
+afd10cf8 e1a02007 e1a03006 e1a00005 ebfff858 
+afd10d08 e1a05000 e1a00004 ebffff47 e375006e 
+afd10d18 03a0006e 13a00000 e8bd81f0 e52de004 
+afd10d28 e59fe030 e24dd00c e083c29e e3a0effa 
+
+stack:
+    100ffde8  00000000  
+    100ffdec  00000000  
+    100ffdf0  00000000  
+    100ffdf4  3b9aca00  
+    100ffdf8  00000000  
+    100ffdfc  ffffffff  
+    100ffe00  7fffffff  
+    100ffe04  00100000  
+    100ffe08  00000000  
+    100ffe0c  afd10958  /system/lib/libc.so
+    100ffe10  0000b49c  [heap]
+    100ffe14  0000b4a0  [heap]
+    100ffe18  100ffe50  
+    100ffe1c  00000000  
+    100ffe20  00000080  
+    100ffe24  a261b7ad  /system/lib/libutils.so
+#00 100ffe28  0000b49c  [heap]
+    100ffe2c  00000000  
+    100ffe30  100ffe50  
+    100ffe34  ffffffff  
+    100ffe38  7fffffff  
+    100ffe3c  0000b4a0  [heap]
+    100ffe40  00100000  
+    100ffe44  a2220ced  /system/lib/libaudioflinger.so
+    100ffe48  0000b49c  [heap]
+    100ffe4c  0000b49c  [heap]
+    100ffe50  25c17d04  
+    100ffe54  32f2d7ff  
+    100ffe58  0000b49c  [heap]
+    100ffe5c  0000b4a0  [heap]
+    100ffe60  0000b478  [heap]
+    100ffe64  ffffffff  
+    100ffe68  7fffffff  
+    100ffe6c  a2226e27  /system/lib/libaudioflinger.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1819, tid: 1859
+cannot get registers: No such process
+         #00  pc 0000ee28  /system/lib/libc.so
+         #01  lr afd10d08  /system/lib/libc.so
+
+code around pc:
+afd0ee08 0afffff7 e8bd4010 e12fff1e e1010090 
+afd0ee18 e12fff1e e92d0090 e3a070f0 ef000000 
+afd0ee28 e8bd0090 e12fff1e e92d0090 e1a03002 
+afd0ee38 e1a02001 e3a01000 e3a070f0 ef000000 
+afd0ee48 e8bd0090 e12fff1e e92d0090 e1a02001 
+
+code around lr:
+afd10ce8 e1a00001 e1a04001 ebffff0c e1a01008 
+afd10cf8 e1a02007 e1a03006 e1a00005 ebfff858 
+afd10d08 e1a05000 e1a00004 ebffff47 e375006e 
+afd10d18 03a0006e 13a00000 e8bd81f0 e52de004 
+afd10d28 e59fe030 e24dd00c e083c29e e3a0effa 
+
+stack:
+    40206de8  0000f3f0  [heap]
+    40206dec  40206e10  
+    40206df0  0000054c  
+    40206df4  3b9aca00  
+    40206df8  00000000  
+    40206dfc  ffffffff  
+    40206e00  7fffffff  
+    40206e04  00100000  
+    40206e08  00000000  
+    40206e0c  afd10958  /system/lib/libc.so
+    40206e10  0000b5cc  [heap]
+    40206e14  0000b5d0  [heap]
+    40206e18  40206e50  
+    40206e1c  ffffffb0  
+    40206e20  00000080  
+    40206e24  a261b7ad  /system/lib/libutils.so
+#00 40206e28  0000b5cc  [heap]
+    40206e2c  ffffffb0  
+    40206e30  40206e50  
+    40206e34  ffffffff  
+    40206e38  7fffffff  
+    40206e3c  0000b5d0  [heap]
+    40206e40  00100000  
+    40206e44  a2220ced  /system/lib/libaudioflinger.so
+    40206e48  00100000  
+    40206e4c  0000b5cc  [heap]
+    40206e50  25c17d04  
+    40206e54  32f2d7ff  
+    40206e58  a9c078d8  /system/lib/libhardware_legacy.so
+    40206e5c  0000f508  [heap]
+    40206e60  0000b5a8  [heap]
+    40206e64  ffffffff  
+    40206e68  7fffffff  
+    40206e6c  a2226e27  /system/lib/libaudioflinger.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1819, tid: 1860
+cannot get registers: No such process
+         #00  pc 0000ee28  /system/lib/libc.so
+         #01  lr afd10d08  /system/lib/libc.so
+
+code around pc:
+afd0ee08 0afffff7 e8bd4010 e12fff1e e1010090 
+afd0ee18 e12fff1e e92d0090 e3a070f0 ef000000 
+afd0ee28 e8bd0090 e12fff1e e92d0090 e1a03002 
+afd0ee38 e1a02001 e3a01000 e3a070f0 ef000000 
+afd0ee48 e8bd0090 e12fff1e e92d0090 e1a02001 
+
+code around lr:
+afd10ce8 e1a00001 e1a04001 ebffff0c e1a01008 
+afd10cf8 e1a02007 e1a03006 e1a00005 ebfff858 
+afd10d08 e1a05000 e1a00004 ebffff47 e375006e 
+afd10d18 03a0006e 13a00000 e8bd81f0 e52de004 
+afd10d28 e59fe030 e24dd00c e083c29e e3a0effa 
+
+stack:
+    40306d20  afd42740  /system/lib/libc.so
+    40306d24  000000dc  
+    40306d28  00001418  
+    40306d2c  000001b8  
+    40306d30  00000000  
+    40306d34  40306d84  
+    40306d38  0000b9a0  [heap]
+    40306d3c  0000b918  [heap]
+    40306d40  00000000  
+    40306d44  afd10958  /system/lib/libc.so
+    40306d48  0000b914  [heap]
+    40306d4c  0000b918  [heap]
+    40306d50  00000000  
+    40306d54  fffffff8  
+    40306d58  00000080  
+    40306d5c  a261b7ad  /system/lib/libutils.so
+#00 40306d60  0000b914  [heap]
+    40306d64  fffffff8  
+    40306d68  00000000  
+    40306d6c  0000b914  [heap]
+    40306d70  0000b918  [heap]
+    40306d74  a222eb20  /system/lib/libaudioflinger.so
+    40306d78  00100000  
+    40306d7c  afd10dd4  /system/lib/libc.so
+    40306d80  0000b8f0  [heap]
+    40306d84  0000b8f0  [heap]
+    40306d88  a222e5c0  /system/lib/libaudioflinger.so
+    40306d8c  0000b8f0  [heap]
+    40306d90  a222e5c0  /system/lib/libaudioflinger.so
+    40306d94  00000000  
+    40306d98  a222eb20  /system/lib/libaudioflinger.so
+    40306d9c  a222362b  /system/lib/libaudioflinger.so
+    40306da0  00000000  
+    40306da4  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1819, tid: 1910
+ r0 fffffe00  r1 c0186201  r2 40506e40  r3 40506e34
+ r4 0000ff98  r5 40506e40  r6 0000ffc8  r7 00000036
+ r8 00100000  r9 a261b7ad  10 40407000  fp 0000ff28
+ ip a2724100  sp 40506e18  lr afd21f85  pc afd0dd8c  cpsr 00000010
+ d0  bf8b5540e3337863  d1  3e66376972bea4d0
+ d2  3feb0d7b014ccde2  d3  3ff0000000000000
+ d4  bfc6196254524786  d5  4001619625452478
+ d6  3f9ce2679b9f86ff  d7  3fcb0d7b014ccde2
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ scr 20000010
+
+         #00  pc 0000dd8c  /system/lib/libc.so
+         #01  pc 00021f82  /system/lib/libc.so (ioctl)
+         #02  pc 00015d48  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb)
+         #03  pc 000166e0  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb)
+         #04  pc 0001b44c  /system/lib/libbinder.so
+         #05  pc 0001b3bc  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv)
+         #06  pc 0001b812  /system/lib/libutils.so
+         #07  pc 000115a8  /system/lib/libc.so (__thread_entry)
+         #08  pc 00011088  /system/lib/libc.so (pthread_create)
+
+code around pc:
+afd0dd6c e8bd0090 e1b00000 512fff1e ea00a26e 
+afd0dd7c e320f000 e92d0090 e3a07036 ef000000 
+afd0dd8c e8bd0090 e1b00000 512fff1e ea00a266 
+afd0dd9c e320f000 e92d0090 e3a07091 ef000000 
+afd0ddac e8bd0090 e1b00000 512fff1e ea00a25e 
+
+code around lr:
+afd21f64 0001f436 00000048 00008910 b500b40e 
+afd21f74 ab03b082 9a04cb02 93013304 eefef7eb 
+afd21f84 bc08b002 4718b003 00000000 1c0eb570 
+afd21f94 00721c14 1c050d52 2a001c33 0072d112 
+afd21fa4 2d00d101 1c28d051 4b2b1c31 f0114a29 
+
+stack:
+    40506dd8  00000001  
+    40506ddc  00000003  
+    40506de0  00000000  
+    40506de4  afd00001  /system/lib/libc.so
+    40506de8  00000000  
+    40506dec  00000000  
+    40506df0  00000000  
+    40506df4  40009028  /dev/binder
+    40506df8  0000004c  
+    40506dfc  0000004c  
+    40506e00  0000004c  
+    40506e04  40009074  /dev/binder
+    40506e08  00000000  
+    40506e0c  00000000  
+    40506e10  00000000  
+    40506e14  00000001  
+#00 40506e18  0000ff98  [heap]
+    40506e1c  0000fff8  [heap]
+#01 40506e20  0000b37c  [heap]
+    40506e24  40506e34  
+    40506e28  a2715d4b  /system/lib/libbinder.so
+    40506e2c  c0186201  
+    40506e30  40506e40  
+    40506e34  00000001  
+#02 40506e38  00000001  
+    40506e3c  00000001  
+    40506e40  00000020  
+    40506e44  00000020  
+    40506e48  00010140  [heap]
+    40506e4c  00000100  
+    40506e50  00000000  
+    40506e54  00010038  [heap]
+    40506e58  0000ff98  [heap]
+    40506e5c  0000ff98  [heap]
+    40506e60  00000000  
+    40506e64  0000ffc8  [heap]
+    40506e68  00000000  
+    40506e6c  a27166e5  /system/lib/libbinder.so
+#03 40506e70  0000fff8  [heap]
+    40506e74  00000000  
+    40506e78  0000ffa0  [heap]
+    40506e7c  0000ffb4  [heap]
+    40506e80  a271b441  /system/lib/libbinder.so
+    40506e84  0000fe6d  [heap]
+    40506e88  40506eb4  
+    40506e8c  40506eb0  
+    40506e90  a2723998  /system/lib/libbinder.so
+    40506e94  a271b451  /system/lib/libbinder.so
+#04 40506e98  0000fe68  [heap]
+    40506e9c  a261b3bf  /system/lib/libutils.so
+#05 40506ea0  00000002  
+    40506ea4  40506ea8  
+    40506ea8  0000fe68  [heap]
+    40506eac  0000ff10  [heap]
+    40506eb0  00000000  
+    40506eb4  0000fe68  [heap]
+    40506eb8  00000000  
+    40506ebc  0000ff40  [heap]
+    40506ec0  00000000  
+    40506ec4  0000fe68  [heap]
+    40506ec8  a261b339  /system/lib/libutils.so
+    40506ecc  a261b815  /system/lib/libutils.so
+#06 40506ed0  00000000  
+    40506ed4  a261b7ad  /system/lib/libutils.so
+    40506ed8  0000ff28  [heap]
+    40506edc  40506f00  
+    40506ee0  a261b7ad  /system/lib/libutils.so
+    40506ee4  0000ff28  [heap]
+    40506ee8  00000078  
+    40506eec  afd115ac  /system/lib/libc.so
+#07 40506ef0  afd41328  /system/lib/libc.so
+    40506ef4  40506f00  
+    40506ef8  0000ff58  [heap]
+    40506efc  afd1108c  /system/lib/libc.so
+#08 40506f00  40506f00  
+    40506f04  0000ff58  [heap]
+    40506f08  00000000  
+    40506f0c  00000000  
+    40506f10  00000000  
+    40506f14  0000ff98  [heap]
+    40506f18  00000000  
+    40506f1c  00000000  
+    40506f20  00000000  
+    40506f24  00000000  
+    40506f28  00000000  
+    40506f2c  00000000  
+    40506f30  00000000  
+    40506f34  00000000  
+    40506f38  00000000  
+    40506f3c  00000000  
+    40506f40  00000000  
+    40506f44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1819, tid: 1915
+ r0 fffffe00  r1 c0186201  r2 40906e40  r3 40906e34
+ r4 00011790  r5 40906e40  r6 000117c0  r7 00000036
+ r8 00100000  r9 a261b7ad  10 40807000  fp 00011550
+ ip a2724100  sp 40906e18  lr afd21f85  pc afd0dd8c  cpsr 00000010
+ d0  bf8b5540e3337863  d1  3e66376972bea4d0
+ d2  3feb0d7b014ccde2  d3  3ff0000000000000
+ d4  bfc6196254524786  d5  4001619625452478
+ d6  3f9ce2679b9f86ff  d7  3fcb0d7b014ccde2
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ scr 20000010
+
+         #00  pc 0000dd8c  /system/lib/libc.so
+         #01  pc 00021f82  /system/lib/libc.so (ioctl)
+         #02  pc 00015d48  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb)
+         #03  pc 000166e0  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb)
+         #04  pc 0001b44c  /system/lib/libbinder.so
+         #05  pc 0001b3bc  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv)
+         #06  pc 0001b812  /system/lib/libutils.so
+         #07  pc 000115a8  /system/lib/libc.so (__thread_entry)
+         #08  pc 00011088  /system/lib/libc.so (pthread_create)
+
+code around pc:
+afd0dd6c e8bd0090 e1b00000 512fff1e ea00a26e 
+afd0dd7c e320f000 e92d0090 e3a07036 ef000000 
+afd0dd8c e8bd0090 e1b00000 512fff1e ea00a266 
+afd0dd9c e320f000 e92d0090 e3a07091 ef000000 
+afd0ddac e8bd0090 e1b00000 512fff1e ea00a25e 
+
+code around lr:
+afd21f64 0001f436 00000048 00008910 b500b40e 
+afd21f74 ab03b082 9a04cb02 93013304 eefef7eb 
+afd21f84 bc08b002 4718b003 00000000 1c0eb570 
+afd21f94 00721c14 1c050d52 2a001c33 0072d112 
+afd21fa4 2d00d101 1c28d051 4b2b1c31 f0114a29 
+
+stack:
+    40906dd8  00000001  
+    40906ddc  00000003  
+    40906de0  00000000  
+    40906de4  afd00001  /system/lib/libc.so
+    40906de8  00000000  
+    40906dec  00000000  
+    40906df0  00000000  
+    40906df4  40009028  /dev/binder
+    40906df8  0000004c  
+    40906dfc  0000004c  
+    40906e00  0000004c  
+    40906e04  40009074  /dev/binder
+    40906e08  00000000  
+    40906e0c  00000000  
+    40906e10  00000000  
+    40906e14  00010001  [heap]
+#00 40906e18  00011790  [heap]
+    40906e1c  000117f0  [heap]
+#01 40906e20  0000b37c  [heap]
+    40906e24  40906e34  
+    40906e28  a2715d4b  /system/lib/libbinder.so
+    40906e2c  c0186201  
+    40906e30  40906e40  
+    40906e34  00000001  
+#02 40906e38  00000001  
+    40906e3c  00000001  
+    40906e40  00000020  
+    40906e44  00000020  
+    40906e48  000103c0  [heap]
+    40906e4c  00000100  
+    40906e50  00000000  
+    40906e54  000102b8  [heap]
+    40906e58  00011790  [heap]
+    40906e5c  00011790  [heap]
+    40906e60  00000000  
+    40906e64  000117c0  [heap]
+    40906e68  00000000  
+    40906e6c  a27166e5  /system/lib/libbinder.so
+#03 40906e70  000117f0  [heap]
+    40906e74  00000000  
+    40906e78  00011798  [heap]
+    40906e7c  000117ac  [heap]
+    40906e80  a271b441  /system/lib/libbinder.so
+    40906e84  0001151d  [heap]
+    40906e88  40906eb4  
+    40906e8c  40906eb0  
+    40906e90  a2723998  /system/lib/libbinder.so
+    40906e94  a271b451  /system/lib/libbinder.so
+#04 40906e98  00011518  [heap]
+    40906e9c  a261b3bf  /system/lib/libutils.so
+#05 40906ea0  00000002  
+    40906ea4  40906ea8  
+    40906ea8  00011518  [heap]
+    40906eac  0000ff28  [heap]
+    40906eb0  00000000  
+    40906eb4  00011518  [heap]
+    40906eb8  00000000  
+    40906ebc  00011568  [heap]
+    40906ec0  00000000  
+    40906ec4  00011518  [heap]
+    40906ec8  a261b339  /system/lib/libutils.so
+    40906ecc  a261b815  /system/lib/libutils.so
+#06 40906ed0  00000000  
+    40906ed4  a261b7ad  /system/lib/libutils.so
+    40906ed8  00011550  [heap]
+    40906edc  40906f00  
+    40906ee0  a261b7ad  /system/lib/libutils.so
+    40906ee4  00011550  [heap]
+    40906ee8  00000078  
+    40906eec  afd115ac  /system/lib/libc.so
+#07 40906ef0  afd41328  /system/lib/libc.so
+    40906ef4  40906f00  
+    40906ef8  00011580  [heap]
+    40906efc  afd1108c  /system/lib/libc.so
+#08 40906f00  40906f00  
+    40906f04  00011580  [heap]
+    40906f08  00000000  
+    40906f0c  00000000  
+    40906f10  00000000  
+    40906f14  00011790  [heap]
+    40906f18  00000000  
+    40906f1c  00000000  
+    40906f20  00000000  
+    40906f24  00000000  
+    40906f28  00000000  
+    40906f2c  00000000  
+    40906f30  00000000  
+    40906f34  00000000  
+    40906f38  00000000  
+    40906f3c  00000000  
+    40906f40  00000000  
+    40906f44  00000000  

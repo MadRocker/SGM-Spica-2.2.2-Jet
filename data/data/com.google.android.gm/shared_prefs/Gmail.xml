@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<boolean name="unobtrusive" value="true" />
+<string name="message-text">1.0</string>
+<string name="ringtone">content://settings/system/notification_sound</string>
+<string name="vibrateWhen">never</string>
+<boolean name="allow-batch" value="true" />
+<string name="auto-advance">list</string>
+<boolean name="enable-notifications" value="true" />
+</map>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<string name="pref_key_ringtone">content://settings/system/notification_sound</string>
+<boolean name="pref_key_mms_fullscreen_landscape" value="true" />
+<string name="pref_key_vibrateWhen">never</string>
+<string name="pref_key_mms_notification_vibrate_pattern"></string>
+<string name="pref_key_mms_message_font_size">18</string>
+<boolean name="pref_key_enable_notifications" value="true" />
+<boolean name="pref_key_mms_black_background" value="true" />
+<boolean name="pref_key_mms_notification_vibrate_call" value="true" />
+<boolean name="pref_key_mms_send_on_enter" value="true" />
+<string name="pref_save_location">download</string>
+<boolean name="pref_key_mms_auto_retrieval" value="true" />
+<boolean name="pref_key_mms_full_timestamp" value="true" />
+<string name="pref_key_mms_user_agent">default</string>
+</map>

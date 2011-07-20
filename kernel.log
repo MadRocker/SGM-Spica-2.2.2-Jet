@@ -1,0 +1,445 @@
+<5>[    0.000000] Linux version 2.6.29 (dopi@VirtualBox) (gcc version 4.4.0 (GCC) ) #14 Thu Mar 24 11:02:35 CET 2011
+<4>[    0.000000] CPU: ARMv6-compatible processor [410fb766] revision 6 (ARMv7), cr=00c5307f
+<4>[    0.000000] CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+<4>[    0.000000] Machine: GT-S8000
+<4>[    0.000000] Ignoring unrecognised tag 0x00000000
+<4>[    0.000000] Memory policy: ECC disabled, Data cache writeback
+<7>[    0.000000] On node 0 totalpages: 43008
+<7>[    0.000000] free_area_init_node: node 0, pgdat c03b1bf0, node_mem_map c04d3000
+<7>[    0.000000]   DMA zone: 336 pages used for memmap
+<7>[    0.000000]   DMA zone: 0 pages reserved
+<7>[    0.000000]   DMA zone: 42672 pages, LIFO batch:7
+<4>[    0.000000] CPU S3C6410 (id 0x36410101)
+<7>[    0.000000] s3c6410_init_clocks: initialising clocks
+<6>[    0.000000] S3C Clocks, (c) 2004 Simtec Electronics
+<7>[    0.000000] s3c64xx_setup_clocks: registering clocks
+<7>[    0.000000] s3c64xx_setup_clocks: clkdiv0 = 01047500
+<7>[    0.000000] s3c64xx_setup_clocks: xtal is 12000000
+<6>[    0.000000] S3C64XX: PLL settings, A=800000000, M=194000000, E=49152008
+<6>[    0.000000] S3C64XX: HCLKx2=266666666, HCLK=133333333, PCLK=33333333
+<6>[    0.000000] mout_apll: source is fout_apll (1), rate is 800000000
+<6>[    0.000000] mout_epll: source is fout_epll (1), rate is 49152008
+<6>[    0.000000] mout_mpll: source is mpll (1), rate is 194000000
+<6>[    0.000000] mmc_bus: source is mout_epll (0), rate is 49152008
+<6>[    0.000000] mmc_bus: source is mout_epll (0), rate is 49152008
+<6>[    0.000000] mmc_bus: source is mout_epll (0), rate is 49152008
+<6>[    0.000000] usb-host-bus: source is mout_epll (0), rate is 49152008
+<7>[    0.000000] s3c64xx_clk_doutmpll_get_rate: parent is 194000000
+<6>[    0.000000] lcd: source is dout_mpll (1), rate is 194000000
+<6>[    0.000000] uclk1: source is mout_epll (0), rate is 49152008
+<6>[    0.000000] spi-bus: source is mout_epll (0), rate is 49152008
+<6>[    0.000000] spi-bus: source is mout_epll (0), rate is 49152008
+<6>[    0.000000] audio-bus: source is mout_epll (0), rate is 49152008
+<6>[    0.000000] audio-bus: source is mout_epll (0), rate is 49152008
+<6>[    0.000000] irda-bus: source is mout_epll (0), rate is 49152008
+<4>[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 42672
+<5>[    0.000000] Kernel command line: loglevel=7 rootdelay=1 init=/init root=/dev/mmcblk0p2 rw 
+<7>[    0.000000] s3c64xx_init_irq: initialising interrupts
+<4>[    0.000000] PID hash table entries: 1024 (order: 10, 4096 bytes)
+<4>[    0.000362] Console: colour dummy device 80x30
+<6>[    0.000388] console [tty0] enabled
+<6>[    0.001418] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    0.003216] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+<6>[    0.018840] Memory: 168MB = 168MB total
+<5>[    0.018933] Memory: 165360KB available (3456K code, 1320K data, 120K init)
+<6>[    0.019726] Calibrating delay loop... 199.47 BogoMIPS (lpj=498688)
+<4>[    0.110487] Mount-cache hash table entries: 512
+<6>[    0.111423] CPU: Testing write buffer coherency: ok
+<6>[    0.114728] net_namespace: 668 bytes
+<6>[    0.117097] NET: Registered protocol family 16
+<4>[    0.121471] JET Machine INIT : Board REV 0x2
+<4>[    0.121897] GPIO-125 autorequested
+<4>[    0.143210] S3C6410 Power Management, (c) 2008 Samsung Electronics
+<4>[    0.144340] JET Machine INIT END
+<4>[    0.144467] S3C6410: Initialising architecture
+<4>[    0.190380] bio: create slab <bio-0> at 0
+<6>[    0.198442] Bluetooth: Core ver 2.15
+<6>[    0.199141] NET: Registered protocol family 31
+<6>[    0.199204] Bluetooth: HCI device and connection manager initialized
+<6>[    0.199251] Bluetooth: HCI socket layer initialized
+<6>[    0.200489] cfg80211: Using static regulatory domain info
+<6>[    0.200558] cfg80211: Regulatory domain: US
+<6>[    0.200594] 	(start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+<6>[    0.200642] 	(2402000 KHz - 2472000 KHz @ 40000 KHz), (600 mBi, 2700 mBm)
+<6>[    0.200681] 	(5170000 KHz - 5190000 KHz @ 40000 KHz), (600 mBi, 2300 mBm)
+<6>[    0.200717] 	(5190000 KHz - 5210000 KHz @ 40000 KHz), (600 mBi, 2300 mBm)
+<6>[    0.200753] 	(5210000 KHz - 5230000 KHz @ 40000 KHz), (600 mBi, 2300 mBm)
+<6>[    0.200789] 	(5230000 KHz - 5330000 KHz @ 40000 KHz), (600 mBi, 2300 mBm)
+<6>[    0.200825] 	(5735000 KHz - 5835000 KHz @ 40000 KHz), (600 mBi, 3000 mBm)
+<6>[    0.200863] cfg80211: Calling CRDA for country: US
+<7>[    0.205076] Switched to high resolution mode on CPU 0
+<6>[    0.208436] NET: Registered protocol family 2
+<6>[    0.208851] IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+<6>[    0.209694] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+<6>[    0.210700] TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+<6>[    0.211157] TCP: Hash tables configured (established 8192 bind 8192)
+<6>[    0.211195] TCP reno registered
+<6>[    0.211623] NET: Registered protocol family 1
+<4>[    0.212811] [BT] Request_irq failed 
+<4>[    0.212899] [BT] rfkill_register(bt_rfk) 
+<4>[    0.212949] [BT] Device Powering ON 
+<4>[    0.212995] [BT] GPIO_BT_WLAN_REG_ON = 1
+<4>[    0.363264] [BT] GPIO_BT_RST_N = 1
+<4>[    0.363908] [BT] Device Powering OFF 
+<4>[    0.363986] [BT] GPIO_BT_RST_N = 0
+<4>[    0.364022] [BT] GPIO_BT_WLAN_REG_ON = 0
+<4>[    0.365296] [BT] rfkill_force_state(bt_sleep, RFKILL_STATE_UNBLOCKED) 
+<4>[    0.415591] [BT] GPIO_BT_WAKE = 0
+<4>[    0.415645] [BT] wake_unlock(bt_wake_lock)
+<4>[    0.416160] S3C PWM Driver, (c) 2006-2007 Samsung Electronics
+<4>[    0.416789] IRQ 73/s3c-dmac: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>[    0.416901] s3c-dmac: Samsung S3C6410 DMA Controller base address at [phy]:0x75000000, [virt]:0xcb00c000, irq 73
+<4>[    0.417048] IRQ 74/s3c-dmac: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>[    0.417135] s3c-dmac: Samsung S3C6410 DMA Controller base address at [phy]:0x75100000, [virt]:0xcb010000, irq 74
+<4>[    0.417272] IRQ 49/s3c-dmac: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>[    0.417359] s3c-dmac: Samsung S3C6410 DMA Controller base address at [phy]:0x7db00000, [virt]:0xcb014000, irq 49
+<4>[    0.417494] IRQ 50/s3c-dmac: IRQF_DISABLED is not guaranteed on shared IRQs
+<4>[    0.417575] s3c-dmac: Samsung S3C6410 DMA Controller base address at [phy]:0x7dc00000, [virt]:0xcb018000, irq 50
+<4>[    0.418124] NetWinder Floating Point Emulator V0.97 (double precision)
+<6>[    0.427766] ashmem: initialized
+<6>[    0.429340] msgmni has been set to 323
+<6>[    0.432433] alg: No test for stdrng (krng)
+<6>[    0.432655] io scheduler noop registered
+<6>[    0.432710] io scheduler anticipatory registered (default)
+<6>[    0.432749] io scheduler deadline registered
+<6>[    0.432945] io scheduler cfq registered
+<7>[    0.433790] s3c64xx_clk_doutmpll_get_rate: parent is 194000000
+<7>[    0.433819] s3c64xx_clk_doutmpll_get_rate: parent is 194000000
+<4>[    0.433837] S3C_LCD clock got enabled :: 194.000 Mhz
+<4>[    0.440078] s3cfb_init_hw!! 
+<4>[    0.446726] Window[0] - FB1: map_video_memory: clear ff000000:00177000
+<4>[    0.451962]             FB1: map_video_memory: dma=5a200000 cpu=ff000000 size=00177000
+<4>[    0.452031] Window[0] - FB2: map_video_memory: clear ff0bb800:000bb800
+<4>[    0.452072]             FB2: map_video_memory: dma=5a2bb800 cpu=ff0bb800 size=000bb800
+<7>[    0.452135] s3c64xx_clk_doutmpll_get_rate: parent is 194000000
+<7>[    0.452153] s3c64xx_clk_doutmpll_get_rate: parent is 194000000
+<4>[    0.465928] Console: switching to colour frame buffer device 60x100
+<6>[    0.477406] fb0: s3cfb frame buffer device
+<4>[    0.484114] Window[1] - FB1: map_video_memory: clear ff177000:00177000
+<4>[    0.489614]             FB1: map_video_memory: dma=5a400000 cpu=ff177000 size=00177000
+<4>[    0.489878] Window[1] - FB2: map_video_memory: clear ff232800:000bb800
+<4>[    0.490132]             FB2: map_video_memory: dma=5a4bb800 cpu=ff232800 size=000bb800
+<6>[    0.491126] fb1: s3cfb frame buffer device
+<4>[    0.497857] Window[2] - FB1: map_video_memory: clear ff2ee000:00177000
+<4>[    0.503389]             FB1: map_video_memory: dma=5a600000 cpu=ff2ee000 size=00177000
+<6>[    0.504355] fb2: s3cfb frame buffer device
+<4>[    0.510980] Window[3] - FB1: map_video_memory: clear ff465000:00177000
+<4>[    0.516289]             FB1: map_video_memory: dma=59800000 cpu=ff465000 size=00177000
+<6>[    0.517255] fb3: s3cfb frame buffer device
+<4>[    0.523864] Window[4] - FB1: map_video_memory: clear ff5dc000:00177000
+<4>[    0.529227]             FB1: map_video_memory: dma=59a00000 cpu=ff5dc000 size=00177000
+<6>[    0.530298] fb4: s3cfb frame buffer device
+<6>[    0.532155] Registered led device: lcd-backlight
+<6>[    1.184435] s3c64xx-uart.1: s3c_serial0 at MMIO 0x7f005400 (irq = 20) is a S3C64XX
+<6>[    1.186153] s3c64xx-uart.2: s3c_serial1 at MMIO 0x7f005800 (irq = 24) is a S3C64XX
+<6>[    1.187775] s3c64xx-uart.3: s3c_serial2 at MMIO 0x7f005c00 (irq = 28) is a S3C64XX
+<6>[    1.210751] brd: module loaded
+<6>[    1.221826] loop: module loaded
+<6>[    1.222102] pmem: 1 init
+<6>[    1.223329] pmem_render: 0 init
+<6>[    1.224486] pmem_stream: 0 init
+<6>[    1.225763] pmem_stream2: 0 init
+<6>[    1.226934] pmem_preview: 0 init
+<6>[    1.228150] pmem_picture: 0 init
+<6>[    1.229604] pmem_jpeg: 0 init
+<6>[    1.231456] Linux video capture interface: v2.00
+<6>[    1.235325] android_bind
+<4>[    1.235466] [ADB_UMS_ACM] string_dev = Jet800000000 
+<4>[    1.235630] android_bind_config
+<6>[    1.236670] DUN is registerd
+<4>[    1.236817] acm_function_add - setup
+<6>[    1.238302] mass_storage_function_add
+<6>[    1.240427] android_adb_ums_acm gadget: Number of LUNs=1
+<6>[    1.240656] adb_function_add
+<4>[    1.241795] usb_add_config finished
+<6>[    1.241960] android_adb_ums_acm gadget: Android Composite USB, version: Mar  3 2011
+<6>[    1.242204] android_adb_ums_acm gadget: android_adb_ums_acm ready
+<6>[    1.243363] mice: PS/2 mouse device common for all mice
+<6>[    1.244746] input: s3c-keypad-rev0000 as /devices/virtual/input/input0
+<4>[    1.246352] s3c-keypad Initialized (columns=3 rows=4)
+<6>[    1.247022] S3C Keypad Driver
+<6>[    1.247169] S3C Touchscreen driver, (c) 2008 Samsung Electronics
+<6>[    1.247546] S3C TouchScreen: delay=50000 oversampling=4 
+<6>[    1.247748] S3C TouchScreen: calibration: xmin=1090 xmax=2854 ymin=1100 ymax=3040
+<6>[    1.248057] s3c_ts.c: TS_IRQ registered (94) 
+<6>[    1.248245] s3c_ts.c: ADC_IRQ registered (95) 
+<6>[    1.248416] S3C TouchScreen got loaded successfully : 12 bits
+<6>[    1.258343] input: S3C TouchScreen as /devices/virtual/input/input1
+<4>[    1.279743] s3c_ts_get_adc_data : AIN0 ,Converted Value: 00008045
+<4>[    1.297664] ADC channel 0 = 0x045
+<4>[    1.308161] s3c_ts_get_adc_data : AIN1 ,Converted Value: 00008519
+<4>[    1.325857] ADC channel 1 = 0x519
+<4>[    1.336228] s3c_ts_get_adc_data : AIN2 ,Converted Value: 00008393
+<4>[    1.353805] ADC channel 2 = 0x393
+<4>[    1.364138] s3c_ts_get_adc_data : AIN3 ,Converted Value: 00008000
+<4>[    1.381611] ADC channel 3 = 0x000
+<6>[    1.395112] rtc-samsungjet rtc-samsungjet: rtc core: registered rtc-samsungjet as rtc0
+<6>[    1.413433] i2c /dev entries driver
+<4>[    1.424056] [FSA9480]fsa9480_i2c_attach
+<4>[    1.424072]  <6>i2c-gpio i2c-gpio.2: using pins 138 (SDA) and 137 (SCL, no clock stretching)
+<4>[    1.452882] [FSA9480]fsa9480_i2c_attach
+<4>[    1.452898]  <6>i2c-gpio i2c-gpio.3: using pins 154 (SDA) and 153 (SCL, no clock stretching)
+<4>[    1.481695] [FSA9480]fsa9480_i2c_attach
+<4>[    1.481710]  [FSA9480]fsa9480_codec_probe
+<4>[    1.491077]  [FSA9480] fsa9480_modify Original value is 0x1e
+<4>[    1.501275]  [FSA9480] fsa9480_modify modified value is 0xfe
+<4>[    1.519010]  [FSA9480]usb_sel
+<4>[    1.537982]  [FSA9480]pm_check
+<4>[    1.546934]  [FSA9480]available_PM_Set [FSA9480] PMIC is not initialized!!!
+<6>[    1.574503] i2c-gpio i2c-gpio.4: using pins 111 (SDA) and 110 (SCL, no clock stretching)
+<4>[    1.593089] [FSA9480]fsa9480_i2c_attach
+<4>[    1.593105]  <6>i2c-gpio i2c-gpio.5: using pins 170 (SDA) and 169 (SCL, no clock stretching)
+<4>[    1.620894] [FSA9480]pm_check
+<4>[    1.620910]  [FSA9480]available_PM_Set [FSA9480] PMIC is not initialized!!!
+<6>[    1.647940] s3c-i2c s3c-i2c.0: slave address 0x10
+<6>[    1.656943] s3c-i2c s3c-i2c.0: bus frequency set to 148 KHz
+<4>[    1.675178] [FSA9480]fsa9480_i2c_attach
+<4>[    1.675196]  <6>s3c-i2c s3c-i2c.0: i2c-0: S3C I2C adapter
+<4>[    1.695082] [FSA9480]pm_check
+<4>[    1.695097]  [FSA9480]available_PM_Set [FSA9480] PMIC is not initialized!!!
+<4>[    1.723091] MAX8906: max8906_init retval = 0
+<4>[    1.736280] [MAX8906]: DATE,TIME: 20.7.2011, 3:23:30
+<4>[    1.750012] [MAX8906]: REG_CHG_CNTL1: 0x3F 
+<4>[    1.758706] [MAX8906]: REG_CHG_CNTL2: 0x60 
+<4>[    1.767489] [MAX8906]: REG_CHG_IRQ1: 0x2 
+<4>[    1.776013] [FSA9480]pm_check
+<4>[    1.776028]  [FSA9480]available_PM_Set [FSA9480] found max8906 
+<4>[    1.801595] [MAX8906]: REG_CHG_IRQ2: 0xC 
+<4>[    1.810167] [MAX8906]: REG_CHG_IRQ1_MASK: 0x2 
+<4>[    1.818626] [MAX8906]: REG_CHG_IRQ2_MASK: 0x0 
+<4>[    1.827133] [MAX8906]: REG_CHG_STAT: 0x1E 
+<4>[    1.835421] [MAX8906]: REG_BBATTCNFG: 0x7 
+<6>[    1.843636] s3c_bat_init
+<6>[    1.852108] instinctq-battery instinctq-battery: s3c_bat_probe
+<4>[    1.869080] [FSA9480]mode_switch
+<4>[    1.869094]  [FSA9480]fsa9480_check_usb_connection
+<4>[    1.877808]  [FSA9480] INTERRUPT1 is 0x00
+<4>[    1.891050]  [FSA9480] DEVICETYPE1 is 0x00
+<4>[    1.899707]  [FSA9480] MANUALSW1 is 0x00
+<4>[    1.908205]  [FSA9480] MANUALSW2 is 0x00
+<4>[    1.916886]  [FSA9480] Cable is not connected
+<4>[    1.925401]  [FSA9480] AUTO MODE.. d1:0x00, d2:0x00
+<4>[    1.942428] [FSA9480]fsa9480_s3c_udc_off
+<4>[    1.942444]  [FSA9480]fsa9480_s3c_udc_off : Fail to LDO OFF
+<4>[    1.950952]  <6>Bluetooth: Virtual HCI driver ver 1.2
+<6>[    1.981160] Bluetooth: HCI UART driver ver 2.2
+<6>[    1.990111] Bluetooth: HCI H4 protocol initialized
+<6>[    1.998722] cpuidle: using governor ladder
+<6>[    2.007437] cpuidle: using governor menu
+<6>[    2.016645] sdhci: Samsung S3C6410 SD/MMC driver
+<6>[    2.025685] s3c-sdhci s3c-sdhci.0: clock source 0: hsmmc (133333333 Hz)
+<6>[    2.042580] s3c-sdhci s3c-sdhci.0: clock source 1: hsmmc (133333333 Hz)
+<6>[    2.059540] s3c-sdhci s3c-sdhci.0: clock source 2: hsmmc (133333333 Hz)
+<6>[    2.078352] Registered led device: mmc0::
+<6>[    2.087543] mmc0: SDHCI controller on samsung-hsmmc [s3c-sdhci.0] using DMA
+<6>[    2.104784] s3c-sdhci s3c-sdhci.1: clock source 0: hsmmc (133333333 Hz)
+<6>[    2.121836] s3c-sdhci s3c-sdhci.1: clock source 1: hsmmc (133333333 Hz)
+<6>[    2.138742] s3c-sdhci s3c-sdhci.1: clock source 2: hsmmc (133333333 Hz)
+<3>[    2.155984] Trying to set irq type for IRQ-6
+<6>[    2.165355] Registered led device: mmc1::
+<6>[    2.174717] mmc1: SDHCI controller on samsung-hsmmc [s3c-sdhci.1] using DMA
+<6>[    2.192066] s3c-sdhci s3c-sdhci.2: clock source 0: hsmmc (133333333 Hz)
+<6>[    2.209110] s3c-sdhci s3c-sdhci.2: clock source 1: hsmmc (133333333 Hz)
+<6>[    2.226344] s3c-sdhci s3c-sdhci.2: clock source 2: hsmmc (133333333 Hz)
+<3>[    2.243523] Trying to set irq type for IRQ-6
+<6>[    2.261430] Registered led device: mmc2::
+<6>[    2.270946] mmc2: SDHCI controller on samsung-hsmmc [s3c-sdhci.2] using DMA
+<4>[    2.297163] gp2a_chip_init(512): GP2A 
+<4>[    2.305917] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.320016] gp2a_opt_probe(746): GP2A in gp2a_opt_probe 
+<4>[    2.329351] opt_attach_adapter(435): GP2A 
+<4>[    2.338123] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.347168] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.356077] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.364728] opt_attach_adapter(435): GP2A 
+<4>[    2.373281] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.382443] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.391324] opt_attach_adapter(435): GP2A 
+<4>[    2.399767] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.408824] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.417622] opt_attach_adapter(435): GP2A 
+<4>[    2.426082] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.434825] opt_attach(396): GP2A 
+<4>[    2.443416] opt_attach(423): GP2A 
+<4>[    2.451905] opt_attach_adapter(435): GP2A 
+<4>[    2.460462] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<6>[    2.478147] input: proximity as /devices/virtual/input/input2
+<4>[    2.496223] gp2a_opt_probe(798): GP2A Workqueue Settings complete
+<4>[    2.512822] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.521587] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.530299] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.538880] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<4>[    2.656997] gp2a_opt_probe(864): GP2A INT Settings complete
+<6>[    2.673392] [OPTICAL] gp2a_off(2)
+<4>[    2.681501] gp2a_off(624): GP2A [PROXIMITY] go power down mode  
+<4>[    2.697755] gp2a_off(626): GP2A disable irq for proximity 
+<6>[    2.714891] kionix-kxsd9: Registering Kionix KXSD9 driver
+<6>[    2.730727] kionix-kxsd9: Initializing Kionix KXSD9 driver at addr: 0x18
+<6>[    2.748179] input: kionix-kxsd9 as /devices/virtual/input/input3
+<6>[    2.765980] mmc0: new high speed SDHC card at address 9ca8
+<6>[    2.783656] mmcblk0: mmc0:9ca8 SU04G 3.69 GiB 
+<6>[    2.792834]  mmcblk0: p1 p2
+<6>[    2.810332] AKM8973 compass driver: init
+<4>[    2.818904] __start
+<4>[    2.827307] gpio setting complete!
+<6>[    2.876149] input: compass as /devices/virtual/input/input4
+<6>[    2.899170] logger: created 256K log 'log_main'
+<6>[    2.908864] logger: created 256K log 'log_events'
+<6>[    2.918674] logger: created 256K log 'log_radio'
+<6>[    2.928355] S3C6400 MFC Driver, (c) 2007 Samsung Electronics
+<4>[    2.950379] S3C6400 MFC driver module init OK.
+<6>[    2.959035] S3C PostProcessor Driver v3.12, (c) 2009 Samsung Electronics
+<6>[    2.977722] S3C Rotator Driver, (c) 2008 Samsung Electronics
+<6>[    2.995007] s3c_rotator_probe called
+<4>[    3.005184] s3c_rotator_probe success
+<6>[    3.014524] S3C JPEG Driver, (c) 2007 Samsung Electronics
+<4>[    3.028111]  S3C G2D  Init : Done
+<6>[    3.036968] S3C G3D Driver, (c) 2007-2009 Samsung Electronics
+<4>[    3.055793] s3c_g3d version : 0x1050000
+<4>[    3.064660] G3D_RESERVED_MEM_SIZE : 32 MB
+<4>[    3.073545] G3D_CHUNK_SIZE : 2 MB
+<4>[    3.082243] G3D_CHUNK_NUM : 16 (UI_CHUNK:3)
+<4>[    3.091068] 0 th virt_addr = 0xcb000000, phy_addr = 0x5b000000
+<4>[    3.108304] 1 th virt_addr = 0xcb200000, phy_addr = 0x5b200000
+<4>[    3.125758] 2 th virt_addr = 0xcb400000, phy_addr = 0x5b400000
+<4>[    3.143045] 3 th virt_addr = 0xcb600000, phy_addr = 0x5b600000
+<4>[    3.160493] 4 th virt_addr = 0xcb800000, phy_addr = 0x5b800000
+<4>[    3.177840] 5 th virt_addr = 0xcba00000, phy_addr = 0x5ba00000
+<4>[    3.195370] 6 th virt_addr = 0xcbc00000, phy_addr = 0x5bc00000
+<4>[    3.212717] 7 th virt_addr = 0xcbe00000, phy_addr = 0x5be00000
+<4>[    3.230250] 8 th virt_addr = 0xcc000000, phy_addr = 0x5c000000
+<4>[    3.247616] 9 th virt_addr = 0xcc200000, phy_addr = 0x5c200000
+<4>[    3.265248] 10 th virt_addr = 0xcc400000, phy_addr = 0x5c400000
+<4>[    3.282782] 11 th virt_addr = 0xcc600000, phy_addr = 0x5c600000
+<4>[    3.300435] 12 th virt_addr = 0xcc800000, phy_addr = 0x5c800000
+<4>[    3.317959] 13 th virt_addr = 0xcca00000, phy_addr = 0x5ca00000
+<4>[    3.335627] 14 th virt_addr = 0xccc00000, phy_addr = 0x5cc00000
+<4>[    3.353269] 15 th virt_addr = 0xcce00000, phy_addr = 0x5ce00000
+<6>[    3.371641] S3C CMM Driver, (c) 2008 Samsung Electronics
+<7>[    3.382223] Registering 'BT GPIO is a success'  The major device number is 207.
+<4>[    3.382251] [VIBETONZ] vibetonz_start : 
+<3>[    3.391609] Failed to request GPIO_VIBTONE_EN!
+<6>[    3.412125] Advanced Linux Sound Architecture Driver Version 1.0.18a.
+<4>[    3.435570] No device for DAI MAX9880
+<4>[    3.444910] No device for DAI s3c-i2s
+<4>[    3.454233] [s3c6410_max9880_init][s3c6410_max9880_init] platform_set_drvdata 
+<4>[    3.473311] Maxim MAX9880 Audio CODEC 0.12
+<4>[    3.482636] max9880_probe assign i2c address 0x10max9880_codec_probe - max9880 found
+<6>[    3.503957] max9880: max9880_init
+<6>[    3.514607] asoc: MAX9880 <-> s3c-i2s mapping ok
+<6>[    3.524713] max9880: max9880_dapm_event 769
+<6>[    3.524725] 
+<6>[    3.554160] max9880: max9880_dapm_event 0
+<6>[    3.554174] 
+<6>[    3.573059] max9880: max9880_add_widgets
+<6>[    3.573076] 
+<3>[    3.591460] Failed to add route LMICIN->Mic Input
+<6>[    3.600685] max9880: max9880_add_controls
+<6>[    3.600701] 
+<4>[    3.635905] [MAX8906 dbg]: ADC 0x60=0x00
+<4>[    3.645836] [MAX8906 dbg]: ADC 0x61=0x00
+<4>[    3.655865] [MAX8906 dbg]: ADC 0x62=0x00
+<4>[    3.665668] [MAX8906 dbg]: ADC 0x63=0x00
+<4>[    3.675507] [MAX8906 dbg]: ADC 0x64=0x00
+<4>[    3.685149] [MAX8906 dbg]: ADC 0x65=0x00
+<4>[    3.694666] [MAX8906 dbg]: ADC 0x66=0x00
+<4>[    3.704307] [MAX8906 dbg]: ADC 0x67=0x00
+<4>[    3.713756] [MAX8906 dbg]: ADC 0x68=0x00
+<4>[    3.723226] [MAX8906 dbg]: ADC 0x69=0x00
+<4>[    3.732447] [MAX8906 dbg]: ADC 0x6a=0x00
+<4>[    3.741744] [MAX8906 dbg]: AUD 0x84=0x00
+<4>[    3.750838] [MAX8906 dbg]: AUD 0x85=0x00
+<4>[    3.759845] [MAX8906 dbg]: AUD 0x86=0x00
+<4>[    3.768899] [MAX8906 dbg]: AUD 0x87=0x00
+<4>[    3.777712] [MAX8906 dbg]: AUD 0x88=0x00
+<4>[    3.786619] [MAX8906 dbg]: AUD 0x89=0x00
+<4>[    3.795335] [MAX8906 dbg]: AUD 0x8a=0x00
+<4>[    3.803910] [MAX8906 dbg]: AUD 0x8B=0x00
+<4>[    3.812581] [MAX8906 dbg]: AUD 0x8C=0x00
+<4>[    3.821081] [MAX8906 dbg]: AUD 0x8D=0x80
+<4>[    3.829496] [MAX8906 dbg]: AUD 0x8E=0x00
+<6>[    3.837407] ALSA device list:
+<6>[    3.845139]   #0: S3C6410 MAX9880 (MAX9880)
+<6>[    3.853081] IPv4 over IPv4 tunneling driver
+<6>[    3.862245] GRE over IPv4 tunneling driver
+<6>[    3.871393] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    3.879472] TCP cubic registered
+<6>[    3.887470] NET: Registered protocol family 17
+<6>[    3.895317] NET: Registered protocol family 15
+<6>[    3.903146] Bluetooth: L2CAP ver 2.13
+<6>[    3.911065] Bluetooth: L2CAP socket layer initialized
+<6>[    3.918777] Bluetooth: SCO (Voice Link) ver 0.6
+<6>[    3.926443] Bluetooth: SCO socket layer initialized
+<6>[    3.934457] Bluetooth: RFCOMM socket layer initialized
+<6>[    3.942218] Bluetooth: RFCOMM TTY layer initialized
+<6>[    3.949913] Bluetooth: RFCOMM ver 1.11
+<6>[    3.957672] VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+<6>[    3.981246] rtc-samsungjet rtc-samsungjet: setting system clock to 2011-07-20 03:23:32 UTC (1311132212)
+<6>[    3.996707] Waiting 1sec before mounting root device...
+<4>[    5.014329] EXT2-fs warning: mounting unchecked fs, running e2fsck is recommended
+<4>[    5.029988] VFS: Mounted root (ext2 filesystem) on device 179:2.
+<6>[    5.045844] Freeing init memory: 120K
+<4>[    5.056666] Warning: unable to open an initial console.
+<3>[    5.993515] init: cannot open '/initlogo.rle'
+<6>[    6.631089] warning: `rild' uses 32-bit capabilities (legacy support in use)
+<4>[   30.625001] [VIBETONZ] enable_vibetonz_from_user : time = 0 msec 
+<4>[   30.625294] [VIBETONZ] reserved VIBRATOR_DISABLE
+<4>[   32.350400] [VIBETONZ] enable_vibetonz_from_user : time = 0 msec 
+<4>[   32.350433] [VIBETONZ] reserved VIBRATOR_DISABLE
+<4>[   32.372851] [VIBETONZ] enable_vibetonz_from_user : time = 1 msec 
+<4>[   32.372912] [VIBETONZ] reserved VIBRATOR_ENABLE
+<4>[   32.374972] [VIBETONZ] reserved VIBRATOR_DISABLE
+<4>[   32.402604] [VIBETONZ] enable_vibetonz_from_user : time = 21 msec 
+<4>[   32.402665] [VIBETONZ] reserved VIBRATOR_ENABLE
+<4>[   32.424721] [VIBETONZ] reserved VIBRATOR_DISABLE
+<3>[   32.496271] state_store: state:0 (on)
+<2>[   35.045420] EXT2-fs error (device mmcblk0p2): ext2_free_blocks: bit already cleared for block 320461
+<6>[  137.771946] binder: release 1819:1861 transaction 7022 in, still active
+<6>[  137.771981] binder: send failed reply for transaction 7022 to 2305:2311
+<6>[  165.714841] binder: 2034:2036 transaction failed 29189, size80-0
+<6>[  165.725827] binder: 2034:2036 transaction failed 29189, size80-0
+<4>[  291.305079] dhd: module is from the staging directory, the quality is unknown, you have been warned.
+<4>[  291.447384] [WIFI] Device powering ON
+<4>[  291.447436] [WIFI] GPIO_BT_WLAN_REG_ON = 1 
+<4>[  291.600065] [WIFI] GPIO_WLAN_RST_N = 1 
+<4>[  291.600097] sdhci_s3c_force_presence_change : sdhci_s3c_force_presence_change called
+<4>[  291.619087] register_mmc_card_pm: [WIFI] Callbacks registered successfully. 
+<4>[  291.619124] 
+<4>[  291.619130] Dongle Host Driver, version 4.217.42.0
+<4>[  291.619137] Compiled in drivers/staging/wlan-bcm/src on Oct  1 2010 at 23:41:01
+<4>[  291.808528] sdhci_cmd_irq SDHCI_INT_TIMEOUT 00010001
+<7>[  291.831834] mmc2: queuing CIS tuple 0x80 length 51
+<7>[  291.834131] mmc2: queuing CIS tuple 0x80 length 7
+<7>[  291.839012] mmc2: queuing CIS tuple 0x80 length 2
+<7>[  291.844177] mmc2: queuing CIS tuple 0x80 length 10
+<7>[  291.848237] mmc2: queuing CIS tuple 0x80 length 6
+<7>[  291.848791] mmc2: queuing CIS tuple 0x00 length 0
+<7>[  291.849340] mmc2: queuing CIS tuple 0x00 length 0
+<7>[  291.849889] mmc2: queuing CIS tuple 0x00 length 0
+<7>[  291.855332] mmc2: queuing CIS tuple 0x00 length 0
+<7>[  291.855942] mmc2: queuing CIS tuple 0x00 length 0
+<7>[  291.856543] mmc2: queuing CIS tuple 0x00 length 0
+<7>[  291.857142] mmc2: queuing CIS tuple 0x00 length 0
+<7>[  291.858038] mmc2: queuing CIS tuple 0x02 length 1
+<6>[  291.861789] mmc2: new SDIO card at address 0001
+<4>[  291.891689] F1 signature read @0x18000000=0x5264325
+<4>[  291.895511] DHD: dongle ram size is set to 393216(orig 393216)
+<4>[  292.335592] [WIFI] Dongle reports CHIP-ACTIVE..
+<6>[  292.506250] [WIFI] Mac address [00:26:E8:BD:CD:44] written into File:/data/.mac.info 
+<6>[  292.506362] eth0 (): not using net_device_ops yet
+<4>[  292.510273] eth0: Broadcom Dongle Host Driver
+<4>[  357.617040] [VIBETONZ] enable_vibetonz_from_user : time = 0 msec 
+<4>[  357.617236] [VIBETONZ] reserved VIBRATOR_DISABLE
+<4>[  357.640929] [VIBETONZ] enable_vibetonz_from_user : time = 1 msec 
+<4>[  357.641216] [VIBETONZ] reserved VIBRATOR_ENABLE
+<4>[  357.643443] [VIBETONZ] reserved VIBRATOR_DISABLE
+<4>[  357.699263] [VIBETONZ] enable_vibetonz_from_user : time = 21 msec 
+<4>[  357.699407] [VIBETONZ] reserved VIBRATOR_ENABLE
+<4>[  357.721640] [VIBETONZ] reserved VIBRATOR_DISABLE
+<4>[  374.301037] [VIBETONZ] enable_vibetonz_from_user : time = 0 msec 
+<4>[  374.301233] [VIBETONZ] reserved VIBRATOR_DISABLE
+<4>[  374.303554] [VIBETONZ] enable_vibetonz_from_user : time = 500 msec 
+<4>[  374.303845] [VIBETONZ] reserved VIBRATOR_ENABLE
+<4>[  374.805276] [VIBETONZ] reserved VIBRATOR_DISABLE
+<4>[  374.830425] [VIBETONZ] enable_vibetonz_from_user : time = 0 msec 
+<4>[  374.830521] [VIBETONZ] reserved VIBRATOR_DISABLE

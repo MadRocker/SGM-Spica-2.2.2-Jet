@@ -1,0 +1,6 @@
+Build: samsung/GT-I5700/GT-I5700/GT-I5700:2.2.2/FRG83G/60505:user/release-keys
+Hardware: GT-I5700
+Bootloader: unknown
+Radio: unknown
+Kernel: Linux version 2.6.29 (dopi@VirtualBox) (gcc version 4.4.0 (GCC) ) #14 Thu Mar 24 11:02:35 CET 2011
+

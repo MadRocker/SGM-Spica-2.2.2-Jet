@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<gs>
+<p pkg="com.google.android.apps.genie.geniewidget" cl="com.google.android.apps.genie.geniewidget.miniwidget.MiniWidgetProvider" />
+<p pkg="com.google.android.googlequicksearchbox" cl="com.google.android.googlequicksearchbox.SearchWidgetProvider" />
+<p pkg="com.android.music" cl="com.android.music.MediaAppWidgetProvider" />
+<p pkg="com.android.protips" cl="com.android.protips.ProtipWidget" />
+<p pkg="com.android.vending" cl="com.android.vending.MarketWidgetProvider" />
+<h pkg="com.android.launcher" id="400" />
+<g id="1" h="0" p="0" />
+<g id="2" h="0" p="1" />
+<g id="3" h="0" p="3" />
+<g id="4" h="0" p="2" />
+<g id="5" h="0" p="4" />
+</gs>

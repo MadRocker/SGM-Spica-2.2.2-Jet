@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<services>
+<service uid="10030" authority="com.android.contacts" accountType="com.android.exchange" />
+<service uid="10041" authority="com.android.contacts" accountType="com.google" />
+<service uid="10038" authority="com.cooliris.picasa.contentprovider" accountType="com.google" />
+<service uid="10040" authority="gmail-ls" accountType="com.google" />
+<service uid="10041" authority="subscribedfeeds" accountType="com.google" />
+<service uid="10041" authority="com.android.calendar" accountType="com.google" />
+<service uid="10030" authority="com.android.calendar" accountType="com.android.exchange" />
+</services>

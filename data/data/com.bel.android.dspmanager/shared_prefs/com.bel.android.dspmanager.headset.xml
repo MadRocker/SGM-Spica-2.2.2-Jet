@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<boolean name="dsp.compression.enable" value="true" />
+<string name="dsp.headphone.mode">dsp.headphone.deep=0;dsp.headphone.wide=0;dsp.headphone.level=-15</string>
+<string name="dsp.compression.mode">dsp.compression.ratio=1.414</string>
+</map>

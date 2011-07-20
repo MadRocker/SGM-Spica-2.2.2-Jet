@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<boolean name="24 hour" value="true" />
+<string name="date_format">dd-MM-yyyy</string>
+<boolean name="auto_time" value="true" />
+</map>
